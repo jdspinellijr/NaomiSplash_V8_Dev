@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900|Cinzel:400,700,900|Cormorant+Garamond&display=swap" rel="stylesheet');
+
+:root {
+  --banner-bg-color: #5e5e5e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: calc(100vh - 50px);
+  z-index: -1;
+  background-image: url("../images/jpeg_image_6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+header {
+  position: -webkit-sticky; /* needed for Safari */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background: var(--banner-bg-color);
+  padding: 0 100px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .logo */
+.menuNav,
+.header2 {
+  position: -webkit-sticky; /* needed for Safari */
+  position: sticky;
+  top: 0.5rem;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background: var(--banner-bg-color);
+  padding: 0 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  background: var(--banner-bg-color);
+}
+
+.topHeader {
+  font-family: 'Cinzel Decorative', cursive;
+  z-index: 10;
+}
+
+.menuFont {
+  font-family: 'Cinzel', serif;
+  font-size: 1.10rem;
+  font-weight: 700;
+  background: var(--banner-bg-color);
+}
+
+.menuNav {
+  justify-content: flex-end;
+}
+
+.header2 {
+  justify-content: flex-start;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+}
+
+ul li {
+  list-style: none;
+  line-height: 50px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+ul li.active,
+ul li:hover {
+  background: #577487;
+  color: #fff;
+}
+
+.content {
+  width: 100%;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.content h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+}
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+  align-content: flex-start;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 100px;
+  /* border: 100px; */
+  border-collapse: collapse;
+  /* turning off margin and border followed by border-collapse: collapse,
+  yields an interesting result - keep playing with this in conjunction with
+  align-content: flex-start; */
+}
+
+.bio_image {
+  height: auto;
+  width:  100%;
+}
+
+.bio_blurb {
+  border-top: 1px solid black;
+  /* border: 1px solid black; */
+  margin-top: 0;
+  padding-top: .01rem;
+  font-size: 2rem;
+  text-align: center;
+  /* vertical-align: top; */
+  /* align-content: flex-start; */
+  text-shadow: 0px 10px 4px #787878;
+}
